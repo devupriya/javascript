@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cart Quantity</title>
+    <style>
+        /*
+        This is a comment.
+      */
+        .red-button {
+            background-color: red;
+            color: white;
+            border: none;
+        }
+
+        .yellow-button {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+      This is a comment.
+    -->
+    <button onclick="
+        console.log(`Cart Quantity: ${cartQuantity }`);
+        ">Show Quantity</button>
+    <button onclick="
+        cartQuantity ++;
+        console.log(`Cart Quantity: ${cartQuantity}`);
+        ">Add to Cart</button>
+    <button onclick="
+        cartQuantity += 2;
+        console.log(`Cart Quantity: ${cartQuantity }`);
+        ">+2</button>
+    <button onclick="
+        cartQuantity += 3;
+        console.log(`Cart Quantity: ${cartQuantity }`);
+        ">+3</button>
+    <button onclick="
+        cartQuantity += 4;
+        console.log(`Cart Quantity: ${cartQuantity }`);
+        ">+4</button>
+    <button onclick="
+        cartQuantity += 5;
+        console.log(`Cart Quantity: ${cartQuantity }`);
+        ">+5</button>
+
+    <button onclick="
+        cartQuantity = 0;
+        console.log('Cart was rest.');
+        console.log(`Cart Quantity: ${ cartQuantity}`);
+        ">Reset Cart</button>
+    <button onclick="
+        cartQuantity -= 1;
+        console.log(`Cart Quantity: ${cartQuantity}`);
+        ">Remove from Cart</button>
+    <button onclick="
+        cartQuantity -= 2;
+        console.log(`Cart Quantity: ${cartQuantity }`);
+        ">-2</button>
+    <button onclick="
+        cartQuantity -= 3;
+        console.log(`Cart Quantity: ${cartQuantity }`);
+        ">-3</button>
+
+    <script>
+        //5.b
+        let name = 'Devu';
+        console.log(`My Name is : ${name}`);
+
+        //5.c
+        let cost = 5 + 2 * 3 + 9;
+        console.log(`Cost of food:$${cost}`);
+
+        let tax = cost * 0.1;
+        console.log(`Tax amount:$ ${tax}`);
+
+        let totalCost = cost + tax;
+        console.log(`Total Cost:$ ${totalCost}`)
+
+        let cartQuantity = 0;
+    </script>
+</body>
+
+</html>
