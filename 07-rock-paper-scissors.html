@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rock Paper Scissors</title>
+    <style>
+        /*
+        This is a comment.
+      */
+        .red-button {
+            background-color: red;
+            color: white;
+            border: none;
+        }
+
+        .yellow-button {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+      This is a comment.
+    -->
+    <h1>Rock Paper Scissors</h1>
+    <button onclick="
+        let compChoose = pickComputerMove();
+        let result = '';
+
+        if (compChoose == 'Rock'){
+            result = 'Tie'
+        }
+        else if (compChoose == 'Paper'){
+            result = 'You Lose'
+        }
+        else{
+            result = 'You win'
+        }
+        alert(`You picked Rock.Computer picked ${compChoose}.${result}`);
+        ">Rock</button>
+
+
+    <button onclick="
+        let compChoose = pickComputerMove();
+
+        let result = '';
+
+        if (compChoose == 'Rock'){
+            result = 'You win';
+        }
+        else if (compChoose == 'Paper'){
+            result = 'Tie' ;
+        }
+        else{
+            result = 'You Lose';
+        }
+        alert(`You picked Paper.Computer picked ${compChoose}.${result}`);
+        ">Paper</button>
+
+
+    <button onclick="
+        let compChoose = pickComputerMove();
+
+        let result = '';
+
+        if (compChoose == 'Rock'){
+            result = 'You Lose'
+        }
+        else if (compChoose == 'Paper'){
+            result = 'You win'
+        }
+        else{
+            result = 'Tie' 
+        }
+        alert(`You picked Scissors.Computer picked ${compChoose}.${result}`);
+        ">Scissors</button>
+
+    <script>
+        function pickComputerMove() {
+            let compChoose = '';
+
+            const computerMove = Math.random();
+            if (computerMove > 0 && computerMove < 1 / 3) {
+                compChoose = 'Rock';
+            } else if (computerMove > 1 / 3 && computerMove < 2 / 3) {
+                compChoose = 'Paper';
+            } else {
+                compChoose = 'Scissors';
+            }
+
+            return compChoose;
+
+        }
+    </script>
+</body>
+
+</html>
