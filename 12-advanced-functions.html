@@ -6,7 +6,12 @@
 </head>
 
 <body>
+    <button onclick="" class="js-button">Click</button>
     <script>
+        const buttonElement = document.querySelector('.js-button');
+
+        buttonElement.addEventListener('click', () => console.log('click'));
+
         // function greeting() {
         //     console.log('Hello');
         // }
@@ -19,18 +24,18 @@
         // console.log(typeof function1);
         // function1()
 
-        setTimeout(function () {
-            console.log('timeout');
-        }, 3000);
+        // setTimeout(function () {
+        //     console.log('timeout');
+        // }, 3000);
 
-        //asynchronous code
-        console.log('next line');
+        // //asynchronous code
+        // console.log('next line');
 
-        setInterval(function () {
-            console.log('interval')
-        }, 3000);
+        // setInterval(function () {
+        //     console.log('interval')
+        // }, 3000);
 
-        console.log('next line2');
+        // console.log('next line2');
     </script>
 </body>
 
